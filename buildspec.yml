@@ -7,7 +7,7 @@ phases:
    
     commands:
         # install npm
-        #- npm install
+        - npm install
        
   build:
     commands:
@@ -24,3 +24,7 @@ artifacts:
     - server.js
     - appspec.yml
     - scripts/**/*
+
+logging:
+  cloudWatch:
+    status: "ENABLED"
